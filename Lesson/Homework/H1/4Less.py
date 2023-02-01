@@ -9,7 +9,7 @@ s = n*m #долек в шоколаде
 if s < k:
     print("нельзя совершить невозможное")
 else:
-    if (k // n == 0 or k // m == 0) and k != s:
+    if (k % n == 0 or k % m == 0) and k != s:
         print ("no")
     else:
         print ("yes")
