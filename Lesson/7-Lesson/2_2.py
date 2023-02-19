@@ -15,17 +15,10 @@
 # будет найти эллипс в два шага: сначала вычислить самую
 # большую площадь эллипса, а затем найти и сам эллипс,
 # имеющий такую площадь. Гарантируется, что самая далекая
-# планета ровно одна
-import math
+# планета ровно одна.
 
-# orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]
-# list_of_orbits = []
-# list_of_orbits = lambda orbits: orbits
-# def find_farthest_orbit(list_of_orbits):
-#     # for i in list_of_orbits(a, b):
-    #     list_of_orbits.append[((a*b)math.Pi)]
-n = 3
-sum = math.pi(n)
-print (sum)
-# print(*find_farthest_orbit(orbits))
+def find_farthest_orbit(nums_list):
+    return max([(a[0]*a[1],a) for a in nums_list if a[0]!=a[1]])[1]
 
+orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3), (11, 11)]
+print(*find_farthest_orbit(orbits))

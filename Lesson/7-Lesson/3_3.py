@@ -7,15 +7,13 @@
 # функция, которая принимает объект и вычисляет его
 # характеристику.
 
-objects = input()
 
-def characteristic(objects):
-    return objects
+values = [0, 2, 10, 6]
 
-def same_by(characteristic, objects):
-   if characteristic == objects:
-        return bool (characteristic == objects)
-        
-print(same_by)
+def same_by(condition, nums):
+    pass
 
-       
+if same_by(lambda x: x % 2, values):
+    print('same')
+else:
+    print('different')

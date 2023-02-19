@@ -6,11 +6,14 @@
 # объявлять массивы и использовать
 # циклы (даже для ввода и вывода).
 
-def rev_num(num):
-    if num == 0:
-        return ""
-    nums = input()
-    return rev_num(num - 1) + f"{nums} "
+def same_by(condition, nums):
+    return len(set(map(condition, nums))) == 1
 
 
-print(rev_num(int(input())))
+values = [0, 2, 10, 5]
+print(same_by(lambda x: x % 2, values))
+
+if same_by(lambda x: x % 2, values):
+    print('same')
+else:
+    print('different')
