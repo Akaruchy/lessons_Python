@@ -42,6 +42,16 @@ def add_new_contact():
 
 # add_new_contact()
 
+
+def search_a_recorde(text):
+    name = input(f'{text} ')
+    while True:
+        if name.isalpha():
+            return name.capitalize()
+        print('не корректный ввод')
+        name = input(f'{text} ')
+
+
 def main_menu():
     play = True
     while play:
@@ -58,7 +68,7 @@ def main_menu():
             case "2":
                 add_new_contact()
             case "3":
-                pass
+                search_a_recorde()
             case "4":
                 pass
             case "5":
